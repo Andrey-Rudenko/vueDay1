@@ -66,6 +66,7 @@ export default {
         newTask.id = this.tasks.at(-1).id
       }
       this.tasks.push(newTask)
+      this.newTaskValue = ""
     },
     del(deleteTask) {
       this.tasks = this.tasks.filter(task => task != deleteTask)
